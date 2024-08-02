@@ -1,6 +1,6 @@
 //Created a seperate class to generate tables(1 to 20)
 
-public class methodTables20 {
+public class methodTables20_2 {
 
     public static void main(String[] args) {
         createTables20();           // method invoke OR method call
