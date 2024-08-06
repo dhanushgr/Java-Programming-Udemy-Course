@@ -36,3 +36,32 @@ Polymorphism:
                         are defined in the same class.
                      -  The parameters are different type or taken in different order.
                       -  This is known as method overloading.
+
+Constructor:
+       * It has the same name as the ClassName.
+       * Don't have a return type.
+       ClassName(){                //This is constructor. By default this Constructor will be present.
+                                   
+       }
+
+       ClassName(int a, int b, int c){    //This is a Constructor with arguments
+              this.a=a;
+              this.b=b;                   //sets a local variable(variable form other class) as a member variable(Variable of this class)
+              this.c=c;
+       }
+
+
+
+       * in Main method:
+              You can directly pass a argument while defining a object. 
+              That is called initial state of the obj.(In opps this is used commonly)
+              If you dont specify a initial state, it will be not used and be as a junk value until the value is assigned.
+       
+       Member variable which is "this.speed"(in our eg) will have the 0 assigned to it initially. 
+
+       * Once you mention a constructor with parameters in your class, dont forget to call the normal constructor will no parameter.
+         because java will erase the normal constructor(which was present in there by default), when you create your own constructor.
+       
+       Good Practice is to mention both of the constructor when you create it.
+       
+       
