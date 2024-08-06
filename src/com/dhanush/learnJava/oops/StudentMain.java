@@ -1,4 +1,4 @@
-package com.dhanush.oops;
+package com.dhanush.learnJava.oops;
 
 public class StudentMain {
     public static void main(String[] args) {

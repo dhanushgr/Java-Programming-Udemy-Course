@@ -1,4 +1,4 @@
-package com.dhanush.learnJava;
+package com.dhanush.learnJava.basic;
 
 public class HelloWorld {
 

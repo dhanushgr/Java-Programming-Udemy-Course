@@ -1,4 +1,4 @@
-package com.dhanush.oops.encapsulation;
+package com.dhanush.learnJava.oops.encapsulation;
 
 public class BikeMain {
     public static void main(String[] args) {
