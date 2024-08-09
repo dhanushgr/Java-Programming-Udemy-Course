@@ -49,4 +49,15 @@ public class MyNumber {
         }
         return -1;
     }
+
+    public void printNumberTriangle(){
+        if(number>=1){
+            for(int i=1; i<=number;i++){
+                for (int j=1; j<=i; j++){
+                    System.out.print(j + " ");
+                }
+                System.out.println();
+            }
+        }
+    }
 }

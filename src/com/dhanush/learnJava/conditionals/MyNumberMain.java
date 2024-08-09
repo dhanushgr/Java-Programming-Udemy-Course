@@ -9,11 +9,9 @@ public class MyNumberMain{
 
         System.out.println("sum up to N is "+ myNumber.sumUpToN());
 
-        System.out.println(myNumber.sumOfDivisors());
+        System.out.println("sum of divisors are"+myNumber.sumOfDivisors());
 
-//        myNumber.isPrime();
-//        int sum = number.sumUpToN();
-//        int sumOfDivisors = myNumber.sumOfDivisors();
-//        myNumber.printANumberTraingle();
+        myNumber.printNumberTriangle();
+
     }
 }
