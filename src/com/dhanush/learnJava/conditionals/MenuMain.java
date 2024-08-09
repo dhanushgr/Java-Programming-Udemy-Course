@@ -1,3 +1,5 @@
+package com.dhanush.learnJava.conditionals;
+
 import java.util.Scanner;
 
 public class MenuMain {

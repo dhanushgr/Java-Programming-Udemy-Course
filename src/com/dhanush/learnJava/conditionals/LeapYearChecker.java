@@ -1,3 +1,5 @@
+package com.dhanush.learnJava.conditionals;
+
 public class LeapYearChecker {
     public boolean isLeapYear(int year) {
         if(year > 0){                                             //year should be greater than 0 for condition 

@@ -1,3 +1,5 @@
+package com.dhanush.learnJava.conditionals;
+
 public class WeekDay {
 
     int day;
