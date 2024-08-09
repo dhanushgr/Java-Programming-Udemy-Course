@@ -36,4 +36,17 @@ public class MyNumber {
         }
         return -1;
     }
+
+    public int sumOfDivisors(){
+        int sum = 0;
+        if(this.number>=1){
+            for(int i=2 ; i<=this.number-1 ; i++){
+                if(this.number%i == 0){
+                    sum = i + sum;
+                }
+            }
+            return sum;
+        }
+        return -1;
+    }
 }
