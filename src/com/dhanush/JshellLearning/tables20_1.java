@@ -1,4 +1,4 @@
-//Printing 1 to 20 tables.
+package src.com.dhanush.JshellLearning;//Printing 1 to 20 tables.
 
 public class tables20_1 {
     public static void main(String args[]){

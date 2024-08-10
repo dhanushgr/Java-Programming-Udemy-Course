@@ -1,4 +1,4 @@
-package com.dhanush.learnJava.conditionals;
+package src.com.dhanush.learnJava.conditionals;
 
 public class PerfectNumberChecker {
     int addUpNumber;

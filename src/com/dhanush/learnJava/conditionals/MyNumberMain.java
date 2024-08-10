@@ -1,4 +1,4 @@
-package com.dhanush.learnJava.conditionals;
+package src.com.dhanush.learnJava.conditionals;
 
 public class MyNumberMain{
     public static void main(String[] args) {

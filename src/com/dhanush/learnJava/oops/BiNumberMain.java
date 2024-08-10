@@ -1,4 +1,4 @@
-package com.dhanush.learnJava.oops;
+package src.com.dhanush.learnJava.oops;
 
 public class BiNumberMain {
     public static void main(String[] args) {

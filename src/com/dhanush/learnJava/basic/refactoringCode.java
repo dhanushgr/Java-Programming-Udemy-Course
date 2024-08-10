@@ -1,7 +1,7 @@
 //THIS CODE EXPLAINS REFACTORING OF CODE.
 //IT GIVES US THE ABILITY TO WRITE THE MAIN CODE ONLY ONCE IN ONE METHOD , AND CALL IT WHEREEVER WE WANT, INSTEAD OF WRITING THE CODE AGAIN AND AGAIN.
 
-package com.dhanush.learnJava.basic;
+package src.com.dhanush.learnJava.basic;
 
 public class refactoringCode {
 	

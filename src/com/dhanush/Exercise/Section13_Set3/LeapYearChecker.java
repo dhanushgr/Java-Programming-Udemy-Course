@@ -1,4 +1,4 @@
-package com.dhanush.Exercise.Section13_Set3;
+package src.com.dhanush.Exercise.Section13_Set3;
 
 public class LeapYearChecker {
     public boolean isLeapYear(int year) {

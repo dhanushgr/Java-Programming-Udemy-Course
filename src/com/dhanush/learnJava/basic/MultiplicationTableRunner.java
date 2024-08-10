@@ -1,4 +1,4 @@
-package com.dhanush.learnJava.basic;
+package src.com.dhanush.learnJava.basic;
 
 public class MultiplicationTableRunner {
 

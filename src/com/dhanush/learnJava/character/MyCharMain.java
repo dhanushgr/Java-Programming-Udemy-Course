@@ -1,4 +1,4 @@
-package com.dhanush.learnJava.character;
+package src.com.dhanush.learnJava.character;
 
 public class MyCharMain {
     public static void main(String[] args) {

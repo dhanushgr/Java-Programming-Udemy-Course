@@ -1,6 +1,6 @@
 /*using THIS keyword in ENCAPSULATION */
 
-package com.dhanush.learnJava.oops.encapsulation;
+package src.com.dhanush.learnJava.oops.encapsulation;
 
 public class Bike {
 

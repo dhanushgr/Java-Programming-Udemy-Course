@@ -1,4 +1,4 @@
-package com.dhanush.Exercise.Section15_Set4;
+package src.com.dhanush.Exercise.Section15_Set4;
 
 public class NumberUtils {
 

@@ -1,3 +1,5 @@
+package src.com.dhanush.JshellLearning;
+
 public class methodWithParameter_3 {
     public static void main(String args[]){
         methodParameter(20);                       //method call/invoke, it prints as many times as i mention in the parameter
