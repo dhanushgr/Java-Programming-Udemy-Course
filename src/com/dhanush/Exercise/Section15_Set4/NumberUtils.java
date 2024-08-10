@@ -7,7 +7,7 @@ public class NumberUtils {
         // Write your code here
         if(number>=0){
              if(number%10!=0){
-                 return number%10;  //returning the last digit if the input is between 1 to 9
+                 return number%10;  //returning the last digit if the input is between 1 and 9
              }
              return 0;      //returning 0 for input 0
         }
@@ -61,5 +61,36 @@ public class NumberUtils {
             addUpNumber = lastDigit + addUpNumber;
         }
         return addUpNumber;
+    }
+
+    //problem 4
+    /**
+     * This method reverses a given integer and returns the reversed number.
+     * If the number is negative, it returns -1 as the reverse of a negative number is undefined.
+     * If the number is zero, it returns 0 as the reverse of 0 is 0.
+     * @param number: an integer
+     * @return reversed number, or -1 if number is negative, or 0 if number is zero.
+     */
+    public int reverseNumber(int number) {
+        // TODO: Write your code here
+
+        int lastDigit = 0;
+        int reverseNumber = 0;
+
+        if(number < 0){
+            return -1;
+        }
+
+        if(number == 0){
+            return 0;
+        }
+
+        while(number != 0){
+            lastDigit = number%10;
+            number = number/10;
+            reverseNumber = reverseNumber * 10 + lastDigit;     //this code keeps on adding up 10's 100's place, and then we add the lastdigit to that specific place
+        }
+
+        return reverseNumber;
     }
 }
