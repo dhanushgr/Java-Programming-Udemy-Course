@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddbaebd6-53f5-4318-bcaa-0cd3972d24b5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/dhanush/Exercise/Section15_Set4/FactorialCalculatorMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dhanush/Exercise/Section15_Set4/GCD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dhanush/Exercise/Section15_Set4/GCDMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dhanush/Exercise/Section15_Set4/Lcm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dhanush/Exercise/Section15_Set4/LcmMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dhanush/Exercise/Section15_Set4/NumberUtilsMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dhanush/Exercise/Section17_Set5/StringMagic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dhanush/learnJava/basic/LearnString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dhanush/Exercise/Section15_Set4/NumberUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dhanush/Exercise/Section15_Set4/NumberUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +41,7 @@
     "Application.FactorialCalculatorMain.executor": "Run",
     "Application.GCDMain.executor": "Run",
     "Application.LcmMain.executor": "Run",
+    "Application.LearnString.executor": "Run",
     "Application.MyCharMain.executor": "Run",
     "Application.NumberUtilsMain.executor": "Run",
     "git-widget-placeholder": "main",
@@ -55,7 +52,7 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.GCDMain">
+  <component name="RunManager" selected="Application.FactorialCalculatorMain">
     <configuration name="FactorialCalculatorMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.com.dhanush.Exercise.Section15_Set4.FactorialCalculatorMain" />
       <module name="Java-Programming-Udemy-Course" />
