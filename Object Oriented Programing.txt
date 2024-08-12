@@ -63,5 +63,35 @@ Constructor:
          because java will erase the normal constructor(which was present in there by default), when you create your own constructor.
        
        Good Practice is to mention both of the constructor when you create it.
-       
-       
+
+
+Reference types:
+        In "Class object = new Class()"
+            * Classes are Reference types.
+            * Objects of the classes are Reference variable.
+        In "int i = 9;"
+            * int is a primitive type
+            * i is a primitive variable.
+
+
+        Memory is stored in stack and heap.
+            * Heap is globally shared.
+            * Each method has a separate stack.
+            * All new objects are created in the heap.
+
+        primitive variables and reference variables are stored in stack.
+            * Primitive variables store the value directly in the stack.
+            * Reference variables store the reference of the memory location of the actual object is stored(Heap address.)
+        whereas the reference type with parameter(actual object) is stored in the Heap.( Class(2) )
+        class(2) and class(5) are two different objects. Both have two different address, which will be referred by the objects in the stack.
+
+        Reference variables stores null , if nothing is assigned to it.
+        If you assign a reference variable to another reference variable, then:
+            * The address gets copied to the variable.
+              If you change any of the things in that new variable then it gets reflected to the old variable,
+              because it shares the same memory address.
+
+        If you compare( a==b )
+            two primitive variables, it compares the value in it.
+            two reference variables, it compares if it is referring to the same object.
+
