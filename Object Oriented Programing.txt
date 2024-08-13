@@ -95,3 +95,26 @@ Reference types:
             two primitive variables, it compares the value in it.
             two reference variables, it compares if it is referring to the same object.
 
+
+variable arguments:
+        It is used in situations where if i want to output something according to the need of how many arguments are present.
+        for eg:
+            int sum(int i, int j){
+                return i+j;
+            }
+
+            int sum(int i, int j, int k){
+                return i+j+k;
+            }
+
+            Instead of writing these multiple methods with diff arguments with same functions. In these conditions
+            we should use variable arguments.
+
+            int sum(int... values){
+                for(int value:values){
+                    sum = sum + value;
+                }
+                return sum;
+            }
+
+            This code can take
