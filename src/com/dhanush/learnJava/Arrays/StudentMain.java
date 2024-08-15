@@ -1,7 +1,5 @@
 package src.com.dhanush.learnJava.Arrays;
 
-import java.math.BigDecimal;
-
 public class StudentMain {
     public static void main(String[] args) {
 //        int[] marks = new int[3];
@@ -10,8 +8,8 @@ public class StudentMain {
 //        marks[2] = 89;
         // OR
 
-        int[] marks = {90,96,89};
-        Student student = new Student("dhanush", marks);
+        //int[] marks = {90,96,89};         this was used when you know the whole marks, and store it in a array , and send that array as a input to the object.
+        Student student = new Student("dhanush", 99, 90, 87, 67);  //inputting the marks manually by the use of variable arguments, or else i would have mentioned "marks", which is the array.
         student.printAllNumberOfMarks();
         System.out.println("numberOfMarks "+student.getNumberOfMarks());
         System.out.println("total sum is "+student.getTotalSumOfMarks());
