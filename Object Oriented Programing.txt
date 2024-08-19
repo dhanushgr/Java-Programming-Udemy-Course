@@ -117,4 +117,17 @@ variable arguments:
                 return sum;
             }
 
-            This code can take
+            This code can take multiple arguments and do the work.
+
+
+Super Class:
+    This concept will occur when there is Inheritance in the project.
+        super() class should be implemented in the constructor of the subclasses
+        If you don't mention anything in the constructor of the subclass, java will implicitly call the super() class.
+        You can always mention the super() class explicitly if you want.
+        if a member variable is mandatory, then you will create the Constructor with the mandatory field (eg:If name of a person is mandatory, then
+         you will construct "public customer(String name){...}" instead of "public customer(){}")
+            * then, the default constructor which is "public customer(){}" will be deleted.
+            * when this happens, either you should mention this default constructor by yourself. OR
+            * mention "super(name)" in every constructor of the subclass.
+            - Otherwise, you will get an error message.
