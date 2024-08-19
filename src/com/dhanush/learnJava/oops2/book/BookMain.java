@@ -12,7 +12,7 @@ public class BookMain {
 
         /*
         can add the review in two types as mentioned
-         - create an object of it and then pass that object as a argument to the method.(line:18,19)
+         - create an object of it and then pass that object as an argument to the method.(line:18,19)
          - directly pass the value to the method (line:20)
          */
         book.addReview(reviews1);

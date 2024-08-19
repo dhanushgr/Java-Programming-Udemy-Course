@@ -1,4 +1,4 @@
-package src.com.dhanush.learnJava.oops2;
+package src.com.dhanush.learnJava.oops2.customer;
 
 public class Customer {
     private String name;

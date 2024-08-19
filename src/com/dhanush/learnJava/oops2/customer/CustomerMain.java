@@ -1,6 +1,6 @@
 // OBJECT COMPOSITION - object inside an object (eg: customer is an object which is taking homeAddress(also an object) as an argument)
 
-package src.com.dhanush.learnJava.oops2;
+package src.com.dhanush.learnJava.oops2.customer;
 
 public class CustomerMain {
     public static void main(String[] args) {
