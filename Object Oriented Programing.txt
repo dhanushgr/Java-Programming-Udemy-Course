@@ -131,3 +131,41 @@ Super Class:
             * when this happens, either you should mention this default constructor by yourself. OR
             * mention "super(name)" in every constructor of the subclass.
             - Otherwise, you will get an error message.
+
+Abstract:
+    * Abstract class
+    * Abstract methods
+
+    - classes which are not abstract are called concrete class(normal class).
+
+    Abstract class:
+        - howToDefine: "public abstract class Animal{...}"
+        - super(parent) class is defined as the abstract class on many occasions
+        - You can't create objects from Abstract class.
+        - eg:   If I have a Cat and Dog class which extends Animal class
+                In this, I would like to have an object of Cat or Dog.
+                But an Object of Animal class doesn't make sense. In this situation, using Abstract class is useful.
+
+    Abstract Method:
+        - howToDefine: public abstract void method();
+        - Abstract methods are inside Abstract classes.
+        - You just need to declare a method, but not define it in Abstract class
+
+        - If you declare a Abstract method(in an Abstract class), then
+          that method MUST be defined in every subclass that extends the super abstract class
+          with a @Override as annotation in the definition of the method(in subclass)
+        - Abstract method makes sure that every subclass should have that method.
+        - If you don't want that class as a must in every subclass, then don't mention it as a abstract method
+
+
+Interface:
+    public interface interfaceClass{}
+    public class Cat implements interfaceClass{}
+    - by default every methods in interface are abstract.
+      so, if you define any method in an interface that will be abstract.
+      if cat uses the interfaceClass now, then that cat class MUST define the method in it(coz its abstract)
+
+    Difference between Interface and Abstract are:
+        Interface:  can implements as many class as it needs.
+                    Every member variable in interface is "final" and "static"
+        Abstract:   can only extend one class(multiple inheritance is not allowed in Java)
