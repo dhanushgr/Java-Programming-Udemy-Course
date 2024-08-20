@@ -164,6 +164,8 @@ Interface:
     - by default every methods in interface are abstract.
       so, if you define any method in an interface that will be abstract.
       if cat uses the interfaceClass now, then that cat class MUST define the method in it(coz its abstract)
+    - Interface have "default void method(){...}", which need not to be defined in the subclass
+      It MUST be defined in the interface itself.
 
     Difference between Interface and Abstract are:
         Interface:  can implements as many class as it needs.
