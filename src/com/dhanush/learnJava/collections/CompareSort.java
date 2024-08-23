@@ -2,7 +2,16 @@ package src.com.dhanush.learnJava.collections;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
+
+class DescendingStudentComparator implements Comparator<Student> {
+
+    @Override
+    public int compare(Student student1, Student student2) {
+        return Integer.compare(student2.getId(), student1.getId());
+    }
+}
 
 public class CompareSort {
     public static void main(String[] args) {
@@ -23,6 +32,11 @@ public class CompareSort {
         // so we don't have to implement comparable again for it.
         Collections.sort(studentArrayList);
         System.out.println(studentArrayList);
+
+        Collections.sort(studentArrayList,new DescendingStudentComparator());
+      // OR  studentArrayList.sort(new DescendingStudentComparator());
+        System.out.println(studentArrayList);
+
     }
 
 }
