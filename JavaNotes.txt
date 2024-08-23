@@ -171,3 +171,34 @@ Interface:
         Interface:  can implements as many class as it needs.
                     Every member variable in interface is "final" and "static"
         Abstract:   can only extend one class(multiple inheritance is not allowed in Java)
+
+Collections:
+    * List
+    * Set
+    * Queue
+    * Map
+
+    List:
+        - Elements can be added in any specific position.
+        - If no position is given, then the element is added at the end.
+    * ArrayList
+    * LinkedList
+    * Vector
+
+    Array vs Arraylist:
+        In Arrays you cant add or remove an element.
+            You can't change the length of the Array once created.
+        In ArrayList you can change the length of the list,
+            and can add or remove the element from any position.
+
+    Arraylist vs LinkedList:
+        In ArrayList you can traverse the element quickly while compared to LinkedList
+                     Adding and removing is coastly, lengthy process.
+        In LinkedList adding and removing a element is easy.
+                      traversing the element is coastly, slower.
+
+    ArrayList vs Vector:
+        Vector is Synchronized(ThreadSafe)
+        ArrayList is not ThreadSafe
+
+
