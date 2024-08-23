@@ -1,4 +1,4 @@
-package src.com.dhanush.learnJava.collections;
+package src.com.dhanush.learnJava.collections.list;
 
 import java.util.ArrayList;
 import java.util.List;

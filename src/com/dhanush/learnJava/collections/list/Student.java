@@ -1,4 +1,4 @@
-package src.com.dhanush.learnJava.collections;
+package src.com.dhanush.learnJava.collections.list;
 
 public class Student implements Comparable<Student>{
     private int id;
