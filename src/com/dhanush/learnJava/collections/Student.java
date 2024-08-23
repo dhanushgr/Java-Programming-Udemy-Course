@@ -1,6 +1,6 @@
 package src.com.dhanush.learnJava.collections;
 
-public class Student {
+public class Student implements Comparable<Student>{
     private int id;
     private String name;
 
@@ -28,5 +28,14 @@ public class Student {
     @Override
     public String toString() {
         return STR."Student{id=\{id}, name='\{name}'}";
+    }
+
+    /*
+        we compare the id present in this class and
+        the id which they input in main method.
+     */
+    @Override
+    public int compareTo(Student that) {
+        return Integer.compare(this.id, that.id);
     }
 }
