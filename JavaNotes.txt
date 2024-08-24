@@ -178,27 +178,69 @@ Collections:
     * Queue
     * Map
 
-    List:
+    1. List:
         - Elements can be added in any specific position.
         - If no position is given, then the element is added at the end.
-    * ArrayList
-    * LinkedList
-    * Vector
+        * ArrayList
+        * LinkedList
+        * Vector
 
-    Array vs Arraylist:
-        In Arrays you cant add or remove an element.
-            You can't change the length of the Array once created.
-        In ArrayList you can change the length of the list,
-            and can add or remove the element from any position.
+        Array vs Arraylist:
+            In Arrays you cant add or remove an element.
+                You can't change the length of the Array once created.
+            In ArrayList you can change the length of the list,
+                and can add or remove the element from any position.
 
-    Arraylist vs LinkedList:
-        In ArrayList you can traverse the element quickly while compared to LinkedList
-                     Adding and removing is coastly, lengthy process.
-        In LinkedList adding and removing a element is easy.
-                      traversing the element is coastly, slower.
+        Arraylist vs LinkedList:
+            In ArrayList you can traverse the element quickly while compared to LinkedList
+                         Adding and removing is coastly, lengthy process.
+            In LinkedList adding and removing a element is easy.
+                          traversing the element is coastly, slower.
 
-    ArrayList vs Vector:
-        Vector is Synchronized(ThreadSafe)
-        ArrayList is not ThreadSafe
+        ArrayList vs Vector:
+            Vector is Synchronized(ThreadSafe)
+            ArrayList is not ThreadSafe
 
 
+    2. Set
+        * HashSet:
+            stores elements in random order
+        * TreeSet:
+            Stores elements in sorted order
+        * LinkedHashSet
+            stores elements in given order
+            // can do positional access
+
+        - All these above sets only have unique elements, doesn't allow duplication
+        - Set interface doesn't allow positional access
+        - It doesn't store the values in a specific position
+        - Set is immutable
+        - HashSet, TreeSet and LinkedHashSet are mutable.
+
+
+    3. Queue
+        - Arranged in order of processing
+        - have methods like
+            * add
+            * remove
+            * offer
+            * poll
+            * peek
+        - PriorityQueue is also present in here
+        - you can create a whole Queue as PriorityQueue(by this class- PriorityQueue)
+        - the default priority is ascending order.
+        - you can also change the priority by comparator class.
+
+
+    4. Map
+        - it is a interface
+        - Does not extend Collections, but is a part of Collection framework
+        - uses Key-Value pair
+            * get: to get a value of certain key
+            * put: to put a new key with a value
+
+        - it has
+            * HashMap:  unsorted, unordered
+            * HashTable:    synchronized, ThreadSafe, key MUST have a value
+            * LinkedHashMap:    insertion order is maintained
+            * TreeMap:  sorted order is maintained
