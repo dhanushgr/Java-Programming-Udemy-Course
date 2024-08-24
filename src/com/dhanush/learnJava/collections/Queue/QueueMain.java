@@ -22,6 +22,11 @@ public class QueueMain {
         queue.poll();   //removes the element which was inserted first FIFO
         System.out.println(queue);
 
+        while (!queue.isEmpty()) {
+            System.out.println(queue.poll());
+            System.out.println(queue);
+        }
+
 
         Queue<String> actors = new PriorityQueue<>(new StringLengthComparator());
         actors.addAll(List.of("stark","groot","madison","evans"));
@@ -34,6 +39,11 @@ public class QueueMain {
         System.out.println(actors);
         actors.poll();
         System.out.println(actors);
+
+        while (!actors.isEmpty()) {
+            System.out.println(actors.poll());
+            System.out.println(actors);
+        }
 
     }
 }
