@@ -149,7 +149,7 @@ Abstract:
     Abstract Method:
         - howToDefine: public abstract void method();
         - Abstract methods are inside Abstract classes.
-        - You just need to declare a method, but not define it in Abstract class
+        - You just need to declare a method, but need not to define it in Abstract class
 
         - If you declare a Abstract method(in an Abstract class), then
           that method MUST be defined in every subclass that extends the super abstract class
@@ -244,3 +244,22 @@ Collections:
             * HashTable:    synchronized, ThreadSafe, key MUST have a value
             * LinkedHashMap:    insertion order is maintained
             * TreeMap:  sorted order is maintained
+
+
+Generics:
+    written <T> or <anything> instead of the data types itself like Integer, Double, Float,string.
+    This helps in reducing the boilerplate code.
+    Imagine I have written some function and it only takes Integer as input,
+     now I may need the same Function which works for Double or String, at this
+     situation we could use generics and mention <T> instead of any data type.
+     Now I have to mention which data type I'm using in place of <T> like
+     <Integer> or <String>.
+
+
+Functional Programming:
+    Lamda(   ->   )
+    uses stream() method
+    Main advantage:
+        writing the whole method without manipulating the memory locations.
+        which inturn is faster than methods with memory allocations(variable)
+    Complex to write.
