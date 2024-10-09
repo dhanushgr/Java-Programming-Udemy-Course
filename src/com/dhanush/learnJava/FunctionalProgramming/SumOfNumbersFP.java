@@ -5,44 +5,15 @@ import java.util.List;
 public class SumOfNumbersFP {
     public static void main(String[] args) {
 
-        List<Integer> numbers = List.of(1,2,3,4,5,6);
+        List<Integer> numbers = List.of(1,2,3,4,5,6);   //This is going to be
+        // used, for example, in this file.
 
-        /*
-            sum of numbers
+        System.out.println("Sum of numbers without FP"+ PrintSumOfNumbers(numbers));
+        System.out.println("Sum of numbers with FP" +PrintSumOfNumbersWithFP(numbers));
 
-        int sum = numbers.stream()
-                .reduce(0, (number1, number2) -> number1 + number2);
-         */
-        int sum = SumWithFP(numbers);
+        System.out.println("sum of even set of numbers is " +PrintSumOfEvenNumbers(numbers));
+        System.out.println(STR."sum of odd set of numbers is : \{PrintSumOfOddNumbers(numbers)}");
 
-        /*
-            1+3+5
-         */
-        int sumOfOddNumbers = numbers.stream()
-                .filter(number -> number%2 == 1)
-                .reduce(0, (number1, number2) -> number1 + number2);
-
-        /*
-            2+4+6
-         */
-        int sumOfEvenNumbers = numbers.stream()
-                .filter(number -> number%2 == 0)
-                .reduce(0, (number1, number2) -> number1 + number2);
-
-
-        System.out.println(sum);
-        System.out.println(sumOfOddNumbers);
-        System.out.println(sumOfEvenNumbers);
-
-        System.out.println(PrintSumOfNumbers(numbers)); //normal method without FP
-
-
-    }
-
-    private static int SumWithFP(List<Integer> numbers) {
-        int sum = numbers.stream()
-                .reduce(0, (number1, number2) -> number1 + number2);
-        return sum;
     }
 
     public static int PrintSumOfNumbers(List<Integer> numbers){
@@ -52,4 +23,31 @@ public class SumOfNumbersFP {
         }
         return sum;
     }
+
+    private static int PrintSumOfNumbersWithFP(List<Integer> numbers) {
+        int sum = numbers.stream()
+                .reduce(0, (number1, number2) -> number1 + number2);
+        return sum;
+    }
+
+    /*
+        2+4+6
+    */
+    public static int PrintSumOfEvenNumbers(List<Integer> numbers){
+        int sum = numbers.stream()
+                .filter(element -> element%2 == 0)
+                .reduce(0, (number1, number2) -> number1 + number2 );
+        return sum;
+    }
+
+    /*
+        1+3+5
+    */
+    public static int PrintSumOfOddNumbers(List<Integer> numbers){
+        int sum = numbers.stream()
+                .filter(element -> element%2 == 1)
+                .reduce(0, (number1,number2) -> number1 + number2);
+        return sum;
+    }
+
 }

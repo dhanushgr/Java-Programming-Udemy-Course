@@ -16,6 +16,7 @@ public class GenericsMain {
         list.addAll(list);
     }
 
+    //Wildcard is (?). It is used when some/any/sub class extends the superClass
     //upper bounded wildcards:
     //helps in implementing common logic
     static double sumOfNumberList(List<? extends Number> numbers){
