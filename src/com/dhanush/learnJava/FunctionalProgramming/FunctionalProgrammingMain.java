@@ -5,6 +5,8 @@ package src.com.dhanush.learnJava.FunctionalProgramming;
  */
 
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class FunctionalProgrammingMain {
     public static void main(String[] args) {
@@ -48,7 +50,25 @@ public class FunctionalProgrammingMain {
         SortedAndDistinctNumbers(numbers2);
         System.out.println();
         PrintSquaresOfDistinctNumbers(numbers2);
-
+        System.out.println();
+        PrintSquaresOfFirst10Numbers();
+        System.out.println();
+        MapToLowerCase();
+        System.out.println();
+        LengthOfEachElement();
+        System.out.println();
+//        MaxNumber(numbers2);
+//        System.out.println();
+//        MinNumber(numbers2);
+//        System.out.println();
+        GetOddNumber(numbers2);
+        System.out.println();
+        GetOddNumbersAsAList(numbers2);
+        System.out.println();
+        GetEvenNumbersAsAList(numbers2);
+        System.out.println();
+        PrintSquaresOfFirst10IntegersAsAList();
+        System.out.println();
     }
 
     public static void PrintBasic(List<String> words){
@@ -147,6 +167,68 @@ public class FunctionalProgrammingMain {
                 .map(e -> e*e)      //This is an intermediate function which
                 // squares the element, and then let it proceed with further
                 // function
+                .forEach(e -> System.out.println(e));
+    }
+
+    public static void PrintSquaresOfFirst10Numbers(){
+        IntStream.range(1,11)
+                .map(e -> e*e)
+                .forEach(e -> System.out.println(e));
+    }
+
+    public static void MapToLowerCase(){
+        List.of("Apple", "Ant", "Bat").stream()
+                .map(e -> e.toLowerCase())
+                .forEach(e -> System.out.println(e));
+    }
+
+    public static void LengthOfEachElement(){
+        List.of("Apple", "Ant", "Bat").stream()
+                .map(e -> e.length())
+                .forEach(e -> System.out.println(e));
+    }
+//
+//    public static void MaxNumber(List<Integer> numbers2){
+//        numbers2.stream()
+//                .max((n1,n2) -> Integer.compare(n1,n2))
+//                .get();
+//    }
+//
+//    public static void MinNumber(List<Integer> numbers2){
+//        numbers2.stream()
+//                .min((n1,n2) -> Integer.compare(n1,n2))
+//                .get();
+//    }
+
+    public static void GetOddNumber(List<Integer> numbers2){
+         numbers2.stream()
+                .filter(e -> e%2 == 1)
+                .forEach(e -> System.out.println(e));
+    }
+
+    public static void GetOddNumbersAsAList(List<Integer> numbers2){
+        numbers2.stream()
+                .filter(e -> e%2 == 1)
+                .collect(Collectors.toList())
+                .forEach(e -> System.out.println(e));
+    }
+
+    public static void GetEvenNumbersAsAList(List<Integer> numbers2){
+        numbers2.stream()
+                .filter(e -> e%2 == 0)
+                .collect(Collectors.toList())
+                .forEach(e -> System.out.println(e));
+    }
+
+    public static void PrintSquaresOfFirst10IntegersAsAList(){
+        IntStream.range(1,11)
+                .map(e -> e*e)
+                .boxed()
+                .collect(Collectors.toList()) // this should be enough to
+                // print the output as a list in Jshell terminal
+                // but for some unknown reason, the required output form
+                // (List) is not achieved in this platform. So I'm using
+                // foreach to print the output.
                 .forEach(e -> System.out.println(e));
     }
 
