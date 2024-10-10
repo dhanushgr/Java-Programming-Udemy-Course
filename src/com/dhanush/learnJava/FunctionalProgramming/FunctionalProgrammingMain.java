@@ -43,32 +43,19 @@ public class FunctionalProgrammingMain {
         System.out.println(STR."sum of odd set of numbers is : \{PrintSumOfOddNumbers(numbers)}");
 
         //calling methods
-        SortNumbers(numbers2);
-        System.out.println();
-        DistinctNumbers(numbers2);
-        System.out.println();
-        SortedAndDistinctNumbers(numbers2);
-        System.out.println();
-        PrintSquaresOfDistinctNumbers(numbers2);
-        System.out.println();
-        PrintSquaresOfFirst10Numbers();
-        System.out.println();
-        MapToLowerCase();
-        System.out.println();
-        LengthOfEachElement();
-        System.out.println();
-//        MaxNumber(numbers2);
-//        System.out.println();
-//        MinNumber(numbers2);
-//        System.out.println();
-        GetOddNumber(numbers2);
-        System.out.println();
-        GetOddNumbersAsAList(numbers2);
-        System.out.println();
-        GetEvenNumbersAsAList(numbers2);
-        System.out.println();
-        PrintSquaresOfFirst10IntegersAsAList();
-        System.out.println();
+        SortNumbers(numbers2);      System.out.println();
+        DistinctNumbers(numbers2);      System.out.println();
+        SortedAndDistinctNumbers(numbers2);     System.out.println();
+        PrintSquaresOfDistinctNumbers(numbers2);        System.out.println();
+        PrintSquaresOfFirst10Numbers();     System.out.println();
+        MapToLowerCase();       System.out.println();
+        LengthOfEachElement();      System.out.println();
+        MaxNumber(numbers2);        System.out.println();
+        MinNumber(numbers2);        System.out.println();
+        GetOddNumber(numbers2);     System.out.println();
+        GetOddNumbersAsAList(numbers2);     System.out.println();
+        GetEvenNumbersAsAList(numbers2);        System.out.println();
+        PrintSquaresOfFirst10IntegersAsAList();     System.out.println();
     }
 
     public static void PrintBasic(List<String> words){
@@ -187,18 +174,20 @@ public class FunctionalProgrammingMain {
                 .map(e -> e.length())
                 .forEach(e -> System.out.println(e));
     }
-//
-//    public static void MaxNumber(List<Integer> numbers2){
-//        numbers2.stream()
-//                .max((n1,n2) -> Integer.compare(n1,n2))
-//                .get();
-//    }
-//
-//    public static void MinNumber(List<Integer> numbers2){
-//        numbers2.stream()
-//                .min((n1,n2) -> Integer.compare(n1,n2))
-//                .get();
-//    }
+
+    public static void MaxNumber(List<Integer> numbers2){
+         int max = numbers2.stream()
+                .max(Integer::compare)
+                .orElse(0);
+        System.out.println(STR."maximum number is \{max}");
+    }
+
+    public static void MinNumber(List<Integer> numbers2){
+         int min = numbers2.stream()
+                .min(Integer::compare)
+                .orElse(0);
+        System.out.println(STR."minimum number is \{min}");
+    }
 
     public static void GetOddNumber(List<Integer> numbers2){
          numbers2.stream()
