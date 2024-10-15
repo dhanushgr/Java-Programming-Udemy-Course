@@ -14,6 +14,19 @@ class Task1 extends Thread{
         for (int i=1; i<=100; i++){
             System.out.print(i + " ");
         }
+
+        //Explaining yeild static method in Thread
+        Thread.yield(); //It is a request to give up the cpu and it takes
+        // nanoseconds pauses which depends on OS and machines, but it left
+        // to the scheduler to give up the cpu or not.
+
+        //explaining sleep static method in Thread
+        try {
+            Thread.sleep(1000); //it puts the code to sleep for 1 sec
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
         System.out.println("Task1 is Done");
     }
 }
@@ -32,7 +45,7 @@ class Task2 implements Runnable{
 }
 
 public class CreatingThread {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         /*
             you should create a new instance of the class task1
@@ -40,6 +53,8 @@ public class CreatingThread {
          */
         System.out.println("Task1 kicked off");
         Task1 task1 = new Task1();
+        task1.setPriority(10);  //you can value from 1 to 10, normal Priority
+        // is 5
         task1.start();
 
         /*
@@ -52,8 +67,16 @@ public class CreatingThread {
         System.out.println("Task2 kicked off");
         Task2 task2 = new Task2();
         Thread task2Thread = new Thread(task2);
+        task2Thread.setPriority(3);
         task2Thread.start();
 
+        /*
+            If I need task 3 to start after both task1 and task2Thread is
+            done, then we need to add these join() which makes sure that it
+            completes before it goes any further in code.
+         */
+        task1.join();
+        task2Thread.join();
 
         //Task 3
         System.out.println("Task3 kicked off");
