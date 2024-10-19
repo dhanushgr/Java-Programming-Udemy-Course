@@ -21,6 +21,11 @@ public class BiCounterWithLock {
     Lock lockForJ = new ReentrantLock();
 
      public void incrementI(){
+         /*
+            This lock check that if I is in lock state, if its not in lock
+            state, then it locks the I, then does the operation, then unlocks
+            it.
+          */
         lockForI.lock();
         i++;
         lockForI.unlock();

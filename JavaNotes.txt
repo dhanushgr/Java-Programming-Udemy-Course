@@ -263,3 +263,89 @@ Functional Programming:
         writing the whole method without manipulating the memory locations.
         which inturn is faster than methods with memory allocations(variable)
     Complex to write.
+
+
+MultiThreading:
+    Thread can be created by 2 ways
+        1. by extending thread:-    extends Thread
+        2. by implementing the interface called runnable:-  implements Runnable
+
+    To create a Thread you should have the method run() in a class which extends
+     thread.
+    you should call start() method on the instance of a class to start the
+    Thread, you should not call run() method.
+
+    ExcecutorService Class is present in here, which helps in running the Thread
+     at our will, we can make it run only 2 threads at a time, or 3 at our will.
+
+
+Exception Handling:
+    Exception Handling has a Hierarchy.
+    1. Unchecked Exception:
+        RunTimeException and its subclasses are Unchecked Exception
+    2. Checked Exception:
+        all super classes of RunTimeException are Checked Exception
+
+    use try catch and finally blocks when there is an exception to handle it.
+    finally block will run, if there is an exception or not.
+    try block tries your code, if there is an exception in there then it goes to
+    catch block and you should write/handle that exception.
+    people handle the exception by printing the stackTrace by common practice
+
+    custom Exception handling can be done, by creating a class with the
+    exception name within the file, and call it by throwing it, we can write
+    custom messages within it.
+
+
+Tips and Tricks:
+
+    1. Equals and Hashcode:
+        Even if two object have same value, if we check we string.equals method it
+        is gonna show its false, so generate equals method.
+        hashcode method should be auto generated so that that hashing works properly
+        in a pattern, and we could know how hashing is working.
+
+    2. Access Modifiers:
+        public:     accessible by anywhere outside the package
+        default:    only accessible within the package
+        protected:  only accessible within the package and its subclasses
+        private:    only accessible within the file
+
+        Classes only have Public or Default access modifiers.
+        Class dont have protected or private.
+
+        Methods and variables could use any access modifiers based on our
+        requirements.
+        It is good practice to make the variables as private unless its final
+        and its value is not gonna change.
+
+    3.Final
+     leads to Immutable programming, which is a good practice.
+        final class can be created
+            - can't be inherited by any class.
+        final method can be created
+            - can't be overridden.
+        final variables can be created
+            - the value of the variable can't be changed.
+        final int argument can also be done, which can't be altered.
+
+     4.Static
+        static methods, variables can be created.
+        static varibales are created when we want only one instance of a
+        variable. used to share same data between multiple instances of the same
+        class.
+
+        you can make get method as a static and call that method by the class
+        name itself, instead of calling it by the instance.
+
+        "public static final" is used in some cases, where you are defining some
+         default values/constants like hours in a day, or something like that.
+
+        Inner class's object cant be accessed by the main method, where as
+        StaticInnerClass can be accessed.
+
+
+     5.Enum
+        enum can be used as a class and we can give some values in it, which are
+        only should be used while using it.
+
