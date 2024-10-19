@@ -349,3 +349,15 @@ Tips and Tricks:
         enum can be used as a class and we can give some values in it, which are
         only should be used while using it.
 
+     6.Modularization:
+        creates modules
+        have module-info.java file which have the details of the module about
+        what it is "extracts" and "requires" and what's in use
+        module path and class path should be given explicitly to have the access
+        of different projects.
+
+     7. var:
+        var can be used instead of defining data types by ourselves.
+        when there is a complex thing in defining what type of data type it is.
+        just mention var instead of datatype. and java will decide that what
+        type of data type it should be at compile time.
